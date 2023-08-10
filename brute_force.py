@@ -9,7 +9,7 @@ tried = 0
 if not pdfReader1.is_encrypted:
     print('The file is not password protected! You can successfully open it!')
 else:
-    wordListFile = open('wordlist.txt', 'r', encoding='utf-8', errors='ignore')
+    wordListFile = open('Brute_Encrypted.pdf', 'r', encoding='utf-8', errors='ignore')
     words = wordListFile.read().lower().split('\n')
 
     for word in words:
